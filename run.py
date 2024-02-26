@@ -129,47 +129,47 @@ def play_game():
 
         failed = 0
 
-    for letter in word:
+        for letter in word:
 
-        if letter in correct_guesses:
-            print(letter, end=" ")
+            if letter in correct_guesses:
+                print(letter, end=" ")
 
+            else:
+                print("_", end=" ")
+                failed += 1
+
+        if failed == 0:
+
+            print("You Win")
+
+            print("The word is: ", word)
+            break
+
+        print()
+        guess = input("guess a letter:").lower()
+
+        try:
+            validate(guess)
+        except ValueError as ve:
+            print(ve)
+            continue
+
+        if guess in correct_guesses or guess in incorrect_guesses:
+            print("You've already guessed that letter.")
+            continue
+
+        if guess in word:
+            correct_guesses.add(guess)
         else:
-            print("_", end=" ")
-            failed += 1
+            incorrect_guesses.add(guess)
+            turns -= 1
+            print(hangman[9 - turns])
+            print("Wrong! You have", turns, "more guesses.")
 
-    if failed == 0:
-
-        print("You Win")
-
-        print("The word is: ", word)
-    break
-
-    print()
-    guess = input("guess a letter:").lower()
-
-    try:
-        validate(guess)
-    except ValueError as ve:
-        print(ve)
-        continue
-
-    if guess in correct_guesses or guess in incorrect_guesses:
-        print("You've already guessed that letter.")
-        continue
-
-    if guess in word:
-        correct_guesses.add(guess)
-    else:
-        incorrect_guesses.add(guess)
-        turns -= 1
-        print(hangman[9 - turns])
-        print("Wrong! You have", turns, "more guesses.")
-
-    if turns == 0:
-        print("You Lose. The word was:", word)
-        play_again()
-        break
+        if turns == 0:
+            print("You Lose. The word was:", word)
+            play_again()
+            break
 
 
 def play_again():
