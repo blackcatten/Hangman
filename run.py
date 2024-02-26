@@ -96,6 +96,12 @@ def instructions():
   print('you have to figure out the 4 letter word')      
   print('Guess a letter you have 26 letters to guess and you only have 10 chances')
   play_game()
+
+def validate(value):
+    if len(value) != 1 or not value.isalpha():
+        raise ValueError("Please enter a single letter.")
+    return True
+
 def play_game():
   global turns
   while turns > 0:
@@ -120,6 +126,12 @@ def play_game():
 
       print()
       guess = input("guess a letter:").lower()
+
+      try:
+          validate(guess)
+      except ValueError as ve:
+          print(ve)
+          continue
   
       if guess in correct_guesses or guess in incorrect_guesses:
           print("You've already guessed that letter.")
@@ -137,7 +149,8 @@ def play_game():
           print("You Lose. The word was:", word)
           play_again()
           break
-  
+
+ 
 def play_again():
 
     print('Choose one of the options:')
@@ -152,8 +165,13 @@ def play_again():
     else:
         print('Incorrect Please enter 1 or 2.')
 
+def exit():
+  
+  os.system("cls" if os.name == "nt" else "clear")
+
 def main_menu():
   welcome()
+  instructions()
   play_game()
   play_again()
 
