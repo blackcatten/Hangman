@@ -77,6 +77,12 @@ incorrect_guesses = set()
 
 turns = 10
 
+def welcome():
+  print('Welcome to Hangman')
+  print('Play Hangman')
+  print('Choose between 1 or 2')
+  print('2.Instructions')
+  print('2.Play Game')
 def play_game():
   while turns > 0:
   
@@ -118,6 +124,7 @@ def play_game():
           break
 
 def main_menu():
+  welcome()
   play_game()
 
 main_menu():
