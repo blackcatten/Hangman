@@ -50,4 +50,6 @@ hangman = ["
 |   |    /\ 
 "]
 
-words = 'work', 'lion', 'mail', 'pork', 'play', 'game', 'frog', 'card', 'blue', 'fish'
+words = ['work', 'lion', 'mail', 'pork', 'play', 'game', 'frog', 'card', 'blue', 'fish']
+
+word = random.choice(words)
