@@ -79,9 +79,9 @@ turns = 10
 
 
 def welcome():
-"""
-Function to start the game and make a choice.
-"""  
+    """
+    Function to start the game and make a choice.
+    """
     print('Welcome to Hangman')
     print('Play Hangman')
     print('Choose between 1 or 2')
@@ -98,9 +98,9 @@ Function to start the game and make a choice.
 
 
 def instructions():
-"""
-Shows how the game works.
-"""
+    """
+    Shows how the game works.
+    """
     print('you have to figure out the 4 letter word')
     print('Guess a letter you have 26 letters to guess')
     print('You have only 10 chances')
@@ -108,22 +108,22 @@ Shows how the game works.
 
 
 def validate(value):
-"""
-Validate letter so that the user cannot make mistakes.
-"""
+    """
+    Validate letter so that the user cannot make mistakes.
+    """
     if len(value) != 1 or not value.isalpha():
         raise ValueError("Please enter a single letter.")
     return True
 
 
 def play_game():
-"""
-This function makes it possible to see how many chances 
-you have and see if you have guessed right or wrong. 
-The user receives an answer as to how many chances 
-the user has left and whether the user has won or lost. 
-It also says which word the user guessed.
-"""
+    """
+    This function makes it possible to see how many chances
+    you have and see if you have guessed right or wrong.
+    The user receives an answer as to how many chances
+    the user has left and whether the user has won or lost.
+    It also says which word the user guessed.
+    """
     global turns
     while turns > 0:
 
@@ -173,10 +173,10 @@ It also says which word the user guessed.
 
 
 def play_again():
-"""
-The user has a chance to choose whether 
-the user wants to play again or quit.
-"""
+    """
+    The user has a chance to choose whether
+    the user wants to play again or quit.
+    """
 
     print('Choose one of the options:')
     print('1. Play the Game Again.')
@@ -192,21 +192,22 @@ the user wants to play again or quit.
 
 
 def exit():
-"""
-Clear the screen.
-"""
+    """
+    Clear the screen.
+    """
 
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def main():
-"""
-Run all program functions.
-"""
+    """
+    Run all program functions.
+    """
     welcome()
     instructions()
     play_game()
     play_again()
     exit()
+
 
 main()
