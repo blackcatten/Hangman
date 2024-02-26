@@ -143,7 +143,7 @@ def play_game():
         print("You Win")
 
         print("The word is: ", word)
-        break
+    break
 
     print()
     guess = input("guess a letter:").lower()
