@@ -81,9 +81,23 @@ def welcome():
   print('Welcome to Hangman')
   print('Play Hangman')
   print('Choose between 1 or 2')
-  print('2.Instructions')
+  print('1.Instructions')
   print('2.Play Game')
+  start = input("write your answer here: ")
+
+  if start == '1':
+    instructions()
+  elif start == '2':
+    play_game()
+  else:
+    print('Incorrect! You should choose 1 or 2. Please, try again')
+
+def instructions():
+  print('you have to figure out the 4 letter word')      
+  print('Guess a letter you have 26 letters to guess and you only have 10 chances')
+  play_game()
 def play_game():
+  global turns
   while turns > 0:
   
       failed = 0
@@ -121,10 +135,26 @@ def play_game():
       
       if turns == 0:
           print("You Lose. The word was:", word)
+          play_again()
           break
+  
+def play_again():
+
+    print('Choose one of the options:')
+    print('1. Play the Game Again.')
+    print('2. Game Over')
+    answer = input('Enter your option here: ')
+
+    if answer == '1':
+        welcome()
+    elif answer == '2':
+        exit()
+    else:
+        print('Incorrect Please enter 1 or 2.')
 
 def main_menu():
   welcome()
   play_game()
+  play_again()
 
-main_menu():
+main_menu()
