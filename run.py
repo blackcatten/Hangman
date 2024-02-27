@@ -143,6 +143,7 @@ def play_game():
             print("You Win")
 
             print("The word is: ", word)
+            play_again()
             break
 
         print()
