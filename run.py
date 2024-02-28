@@ -80,7 +80,7 @@ def welcome():
     print('Choose between 1 or 2')
     print('1.Instructions')
     print('2.Play Game')
-    start = input("write your answer here: ")
+    start = input("write your answer here: ").strip()
 
     if start == '1':
         instructions()
