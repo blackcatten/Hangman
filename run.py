@@ -70,13 +70,6 @@ words = ['work',
          'blue',
          'fish']
 
-word = random.choice(words)
-
-correct_guesses = set()
-incorrect_guesses = set()
-
-turns = 10
-
 
 def welcome():
     """
