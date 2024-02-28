@@ -95,9 +95,9 @@ def instructions():
     Shows how the game works.
     """
     print('===========INSTRUCTIONS====================')
-    print('you have to figure out the 4 letter word')
-    print('Guess a letter you have 26 letters to guess')
-    print('You have only 10 chances')
+    print('You have to figure out the 4 letter word.')
+    print('Guess a letter you have 26 letters to guess.')
+    print('You have only 10 chances.')
     print('===========================================')
     welcome()
 
