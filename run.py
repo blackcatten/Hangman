@@ -119,7 +119,14 @@ def play_game():
     the user has left and whether the user has won or lost.
     It also says which word the user guessed.
     """
-    global turns
+    # sets up a random name
+    word = random.choice(words)
+    # create set (to stop duplication) of guesses
+    correct_guesses = set()
+    incorrect_guesses = set()
+    # sets turn amount
+    turns = 10
+    
     while turns > 0:
 
         failed = 0
