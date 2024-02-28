@@ -126,7 +126,7 @@ def play_game():
     incorrect_guesses = set()
     # sets turn amount
     turns = 10
-    
+
     while turns > 0:
 
         failed = 0
@@ -187,7 +187,7 @@ def play_again():
     answer = input('Enter your option here: ')
 
     if answer == '1':
-        welcome()
+        play_game()
     elif answer == '2':
         exit()
     else:
