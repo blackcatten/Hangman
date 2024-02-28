@@ -85,7 +85,7 @@ def welcome():
     if start == '1':
         instructions()
     elif start == '2':
-        play_game()
+        return
     else:
         print('Incorrect! You should choose 1 or 2. Please, try again')
 
