@@ -207,10 +207,9 @@ def main():
     Run all program functions.
     """
     welcome()
-    instructions()
     play_game()
-    play_again()
     exit()
 
 
+if __name__ == "__main__"
 main()
