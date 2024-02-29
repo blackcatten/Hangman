@@ -35,6 +35,9 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 
 ## Testing:
 
+-Result automatic testing
+![validator](assets/images/hangman-validator.png)
+
 ## Manual Testing:
 
 ### User Story Testing:
@@ -67,6 +70,6 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 
 ## Credits:
 ### Code:
-### Media:
+
 ## Acknowledgements: 
 - Thanks to my mentor Spencer for all guidance and help.
