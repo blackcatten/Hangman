@@ -1,4 +1,5 @@
 # Hangman
+
 ## User Experience (UX):
 
 This section is added to show how the game is made. Also show that it is as user-friendly as possible.
@@ -42,6 +43,9 @@ The project's goal is to show how to easily play a satisfying game that is a lit
     - When the user has finished playing, the user gets a clear message to play again and if the user does not want to, the user can stop by choosing option 2.
 
 ## Known Bugs:
+
+- No known issuse at the moment.
+
 ## Deployment:
 ## Technologies Used:
 ### Languages Used:
@@ -50,4 +54,4 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 ### Content:
 ### Code:
 ### Media:
-## Acknowledgements:
+## Acknowledgements: Thanks to my mentor Spencer for all guidance and help.
