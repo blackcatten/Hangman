@@ -18,13 +18,15 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 - As a user, it should be easy to play again and if the user does not want to, the user can quit.
 
 ## Features:
+
 ### Existing Features:
-## Typography:
+
+
 ### Design:
+
 ## Testing:
-### Manual Testing:
 
-
+## Manual Testing:
 
 ### User Story Testing:
 
@@ -48,11 +50,13 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 - No known issuse at the moment.
 
 ## Deployment:
+
 ## Technologies Used:
-### Languages Used:
-### Frameworks, Libraries and Programs Used:
+
+- Python
+- Heroku for deploying the app.
+
 ## Credits:
-### Content:
 ### Code:
 ### Media:
 ## Acknowledgements: 
