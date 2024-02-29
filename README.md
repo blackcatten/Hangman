@@ -20,11 +20,16 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 ## Features:
 - This is a classic game that you usually play at school. In this game you have a chance to figure out the word that is 4 letters long.
 ### Existing Features:
-- Here you have the start. 
+- Here the user have the start. 
 ![start gaming](assets/images/hangman-start.png)
 - Here are the instructions.
 ![instructions](assets/images/hangman-instructions.png)
-- When you actually playing the game.
+- When the user actually playing the game.
+![playing](assets/images/hangman-playing.png)
+- And here is when the user win the game.
+![youwin](assets/images/hangman-youwin.png)
+- And when the user lose.
+![youlose](assets/images/hangman-youlose.png)
 
 ### Design:
 
