@@ -1,4 +1,5 @@
 # Hangman
+- My live project
 
 ## User Experience (UX):
 
@@ -54,4 +55,5 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 ### Content:
 ### Code:
 ### Media:
-## Acknowledgements: Thanks to my mentor Spencer for all guidance and help.
+## Acknowledgements: 
+- Thanks to my mentor Spencer for all guidance and help.
