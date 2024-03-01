@@ -1,5 +1,5 @@
 # Hangman Game:
-- My live project
+[my live project](https://hangman2219-5c92e2b0875a.herokuapp.com/)
 
 ## User Experience (UX):
 
@@ -91,7 +91,9 @@ Steps followed to deploy:
 
 ## Credits:
 
-### Code:
+- [Python program for word guessing game](https://www.geeksforgeeks.org/python-program-for-word-guessing-game/) - this website was followed and some Python code was taken and adapted to my game.
+
+- [Movie tickets Booking management system in Python](https://www.geeksforgeeks.org/movie-tickets-booking-management-system-in-python/) - this website was used to provide function "def welcome():".
 
 ## Acknowledgements: 
 - Thanks to my mentor Spencer for all guidance and help.
