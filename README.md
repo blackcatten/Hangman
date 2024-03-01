@@ -1,4 +1,6 @@
-# Hangman Game:
+# Hangman Game
+![responsive](assets/images/responsive-pp3.png)
+
 [my live project](https://hangman2219-5c92e2b0875a.herokuapp.com/)
 
 ## User Experience (UX):
