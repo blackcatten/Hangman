@@ -1,4 +1,4 @@
-# Hangman
+# Hangman Game:
 - My live project
 
 ## User Experience (UX):
@@ -30,6 +30,10 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 ![youwin](assets/images/hangman-youwin.png)
 - And when the user lose.
 ![youlose](assets/images/hangman-youlose.png)
+
+## Future Development:
+
+- In the future I will probably add longer words and more colors. Even a little more style on the hanging man.
 
 ### Design:
 
@@ -65,12 +69,15 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 
 ## Deployment:
 
+The game can be played in the following ways:
+- 
 ## Technologies Used:
 
 - Python
 - Heroku for deploying the app.
 
 ## Credits:
+
 ### Code:
 
 ## Acknowledgements: 
