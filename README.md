@@ -18,7 +18,7 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 - As a user, it should be easy to play again and if the user does not want to, the user can quit.
 
 ## Features:
-- This is a classic game that you usually play at school. In this game you have a chance to figure out the word that is 4 letters long.
+- This is a classic game that you usually play at school. In this game you have a chance to figure out the word that is 4 letters long. It's fun for young and old alike if you like puns. Easy to play and accessible to everyone.
 ### Existing Features:
 - Here the user have the start. 
 ![start gaming](assets/images/hangman-start.png)
@@ -32,6 +32,8 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 ![youlose](assets/images/hangman-youlose.png)
 
 ### Design:
+
+- This equipment is a reminder of when the nokia 3210 or 3310 came about 25 years ago when you sent different messages with brackets and different variants. It should seem like you are rediscovering the late 90s early 00s. The design is simple, not too difficult, but still quite stylish.
 
 ## Testing:
 
