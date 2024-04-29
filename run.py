@@ -71,10 +71,19 @@ words = ['work',
          'fish']
 
 
+def clear():
+    """
+    Clear the screen.
+    """
+
+    os.system("cls" if os.name == "nt" else "clear")
+
+
 def welcome():
     """
     Function to start the game and make a choice.
     """
+    clear()
     print('Welcome to Hangman')
     print('Play Hangman')
     print('Choose between 1 or 2')
@@ -88,6 +97,7 @@ def welcome():
         return
     else:
         print('Incorrect! You should choose 1 or 2. Please, try again')
+        welcome()
 
 
 def instructions():
@@ -174,6 +184,15 @@ def play_game():
             play_again()
             break
 
+def reset_game():
+    """
+    Reset variables for a new game.
+    """
+    global correct_guesses, incorrect_guesses, turns
+    correct_guesses = set()
+    incorrect_guesses = set()
+    turns = 10
+
 
 def play_again():
     """
@@ -187,6 +206,7 @@ def play_again():
     answer = input('Enter your option here: ')
 
     if answer == '1':
+        clear()
         play_game()
     elif answer == '2':
         exit()
@@ -196,10 +216,12 @@ def play_again():
 
 def exit():
     """
-    Clear the screen.
+    Goodbye
     """
 
-    os.system("cls" if os.name == "nt" else "clear")
+    print('================')
+    print('Goodbye!')
+    print('================')
 
 
 def main():
@@ -208,7 +230,7 @@ def main():
     """
     welcome()
     play_game()
-    exit()
+    
 
 
 if __name__ == "__main__":
