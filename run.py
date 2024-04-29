@@ -83,21 +83,23 @@ def welcome():
     """
     Function to start the game and make a choice.
     """
-    clear()
+    
     print('Welcome to Hangman')
-    print('Play Hangman')
-    print('Choose between 1 or 2')
-    print('1.Instructions')
-    print('2.Play Game')
-    start = input("write your answer here: ").strip()
+    while True:
+        print('Play Hangman')
+        print('Choose between 1 or 2')
+        print('1.Instructions')
+        print('2.Play Game')
+        start = input("write your answer here: ").strip()
 
-    if start == '1':
-        instructions()
-    elif start == '2':
-        return
-    else:
-        print('Incorrect! You should choose 1 or 2. Please, try again')
-        welcome()
+        if start == '1':
+            instructions()
+            continue
+        elif start == '2':
+            return
+        else:
+            print('Incorrect! You should choose 1 or 2. Please, try again')
+            welcome()
 
 
 def instructions():
