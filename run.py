@@ -99,7 +99,7 @@ def welcome():
             return
         else:
             print('Incorrect! You should choose 1 or 2. Please, try again')
-            welcome()
+            continue
 
 
 def instructions():
@@ -111,7 +111,7 @@ def instructions():
     print('Guess a letter you have 26 letters to guess.')
     print('You have only 10 chances.')
     print('===========================================')
-    welcome()
+    play_game()
 
 
 def validate(value):
@@ -201,19 +201,22 @@ def play_again():
     The user has a chance to choose whether
     the user wants to play again or quit.
     """
+    while True:
+        print('Choose one of the options:')
+        print('1. Play the Game Again.')
+        print('2. Game Over')
+        answer = input('Enter your option here: ')
 
-    print('Choose one of the options:')
-    print('1. Play the Game Again.')
-    print('2. Game Over')
-    answer = input('Enter your option here: ')
-
-    if answer == '1':
-        clear()
-        play_game()
-    elif answer == '2':
-        exit()
-    else:
-        print('Incorrect Please enter 1 or 2.')
+        if answer == '1':
+            clear()
+            reset_game()
+            play_game()
+            break
+        elif answer == '2':
+            exit()
+            break
+        else:
+            print('Incorrect Please enter 1 or 2.')
 
 
 def exit():
