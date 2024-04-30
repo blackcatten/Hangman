@@ -213,6 +213,7 @@ def play_again():
             play_game()
             break
         elif answer == '2':
+            clear()
             exit()
             break
         else:
