@@ -1,9 +1,8 @@
 import random
 import os
 
-
-
-
+from stages import hangman
+from words import words
 
 def clear():
     """
@@ -148,20 +147,12 @@ def play_again():
             break
         elif answer == '2':
             clear()
+            print('================')
+            print('Goodbye!')
+            print('================')
             exit()
-            break
         else:
             print('Incorrect Please enter 1 or 2.')
-
-
-def exit():
-    """
-    Goodbye
-    """
-
-    print('================')
-    print('Goodbye!')
-    print('================')
 
 
 def main():
@@ -170,7 +161,6 @@ def main():
     """
     welcome()
     play_game()
-    
 
 
 if __name__ == "__main__":
