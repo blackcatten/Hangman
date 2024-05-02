@@ -42,7 +42,7 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 - This equipment is a reminder of when the nokia 3210 or 3310 came about 25 years ago when you sent different messages with brackets and different variants. It should seem like you are rediscovering the late 90s early 00s. The design is simple, not too difficult, but still quite stylish.
 
 - Flow Charts.
-![flow-charts](assets/images/flow-charts.png)
+![flow-charts](assets/images/flow_charts.png)
 
 ## Testing:
 
