@@ -4,6 +4,7 @@ import os
 from stages import hangman
 from words import words
 
+
 def clear():
     """
     Clear the screen.
@@ -16,7 +17,7 @@ def welcome():
     """
     Function to start the game and make a choice.
     """
-    
+
     print('Welcome to Hangman')
     while True:
         print('Play Hangman')
@@ -118,6 +119,7 @@ def play_game():
             print("You Lose. The word was:", word)
             play_again()
             break
+
 
 def reset_game():
     """
