@@ -46,8 +46,10 @@ The project's goal is to show how to easily play a satisfying game that is a lit
 
 ## Testing:
 
--Result automatic testing
-![validator](assets/images/hangman-validator.png)
+- Result automatic testing run.py, stages.py and words.py:
+![validator](assets/images/validator1.png)
+![validator2](assets/images/validator2.png)
+![validatpr3](assets/images/validator3.png)
 
 ## Manual Testing:
 
